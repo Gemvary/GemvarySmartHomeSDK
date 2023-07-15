@@ -1,0 +1,11 @@
+framework module GemvarySmartHomeSDK {
+  umbrella header "GemvarySmartHomeSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GemvarySmartHomeSDK.Swift {
+  header "GemvarySmartHomeSDK-Swift.h"
+  requires objc
+}

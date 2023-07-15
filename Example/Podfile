@@ -2,6 +2,10 @@ use_frameworks!
 
 platform :ios, '10.0'
 
+# 指定开源库的下载源（组件化开发时会用到）
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Gemvary/GemvarySpec.git'
+
 target 'GemvarySmartHomeSDK_Example' do
   pod 'GemvarySmartHomeSDK', :path => '../'
 

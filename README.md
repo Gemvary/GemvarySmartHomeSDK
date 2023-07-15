@@ -20,6 +20,25 @@ it, simply add the following line to your Podfile:
 pod 'GemvarySmartHomeSDK'
 ```
 
+git remote add origin https://github.com/Gemvary/GemvarySmartHomeSDK.git
+
+
+```shell
+git branch -M main
+
+git push -u origin main
+
+git push --tags
+
+pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+pod spec lint --sources='https://github.com/Gemvary/GemvarySpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings --verbose --use-libraries --skip-import-validation --no-clean
+
+
+pod repo push GemvarySpec GemvarySmartHomeSDK.podspec --allow-warnings --verbose --skip-import-validation
+
+```
+
 ## Author
 
 songmenglong, songmenglong@gemvary.com
