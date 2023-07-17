@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GemvarySmartHomeSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of GemvarySmartHomeSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -34,8 +34,12 @@ TODO: Add long description of the pod here.
   
   s.vendored_frameworks = "GemvarySmartHomeSDK/Frameworks/*.framework"
 
-  s.static_framework = true
-  s.swift_versions = ['5.0']
+#  s.static_framework = true
+#  s.library = 'c++'
+#  s.requires_arc = true
+
+
+#  s.swift_versions = ['5.0']
 
   # mqtt依赖
   s.dependency 'MQTTClient'
@@ -49,6 +53,7 @@ TODO: Add long description of the pod here.
     'ONLY_ACTIVE_ARCH' => 'YES',
     'ENABLE_BITCODE' => 'NO',
     'VALID_ARCHS[sdk=iphonesimulator*]' => '',
+    #'OTHER_LDFLAGS' => '-ObjC',
     #'GENERATE_INFOPLIST_FILE' => 'YES'
   }
   
@@ -56,6 +61,7 @@ TODO: Add long description of the pod here.
     'ONLY_ACTIVE_ARCH' => 'YES',
     'ENABLE_BITCODE' => 'NO',
     'VALID_ARCHS[sdk=iphonesimulator*]' => '',
+    #'OTHER_LDFLAGS' => '-ObjC',
     #'GENERATE_INFOPLIST_FILE' => 'YES'
   }
   
@@ -63,8 +69,10 @@ TODO: Add long description of the pod here.
     'ONLY_ACTIVE_ARCH' => 'YES',
     'ENABLE_BITCODE' => 'NO',
     'VALID_ARCHS[sdk=iphonesimulator*]' => '',
+    #'OTHER_LDFLAGS' => '-ObjC',
     #'GENERATE_INFOPLIST_FILE' => 'YES'
   }
+
   
   
   s.dependency 'CleanJSON'

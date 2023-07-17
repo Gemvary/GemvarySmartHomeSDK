@@ -24,3 +24,5 @@ class ViewController: UIViewController {
 
 }
 
+// Undefined symbol: _getTcpConnStatus
+

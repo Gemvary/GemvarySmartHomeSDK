@@ -11,6 +11,7 @@
 #endif
 
 #import "GemvarySmartHomeSDK.h"
+#import "LanNetService.h"
 #import "NetInterfaceTool.h"
 #import "comm_Head_Adaptation.h"
 #import "comm_type.h"

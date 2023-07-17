@@ -984,6 +984,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) LanLibService * _Nonnu
 @end
 
 
+@interface LanLibService (SWIFT_EXTENSION(GemvarySmartHomeSDK)) <LanNetDelegate>
+/// 发送的数据
+- (void)houmanSendData:(NSString * _Nonnull)sendStr;
+/// 接收到的数据
+- (void)tcpRecvDataCb:(NSString * _Nonnull)recvStr;
+/// 状态不为空
+- (void)tcpConnectStatusCb:(int32_t)statusStr;
+@end
+
+
 
 @interface LanLibService (SWIFT_EXTENSION(GemvarySmartHomeSDK))
 /// 清空局域网设备列表
